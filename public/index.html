@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&family=Raleway&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAu7Zc_CIKJNUHfwokyik0tLG9UFSwalHc",
+            authDomain: "omkar-sawant.firebaseapp.com",
+            databaseURL: "https://omkar-sawant.firebaseio.com",
+            projectId: "omkar-sawant",
+            storageBucket: "omkar-sawant.appspot.com",
+            messagingSenderId: "1064717902909",
+            appId: "1:1064717902909:web:977a9d1e586aea24063654",
+            measurementId: "G-8F588H7QQR"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+</head>
+
+<body>
+    <section class="home">
+        <div class="backg">
+            <img src="assets/bg.jpg" alt="bg" height="277vh" width="100%" />
+        </div>
+        <div class="info">
+            <div class="row">
+                <div class="col">
+                    <br />
+                    <h2 class="name">Omkar Sawant</h2>
+                    <p class="descript">
+                        I'm a flutter and web-developer I have build many projects .
+                        I am having my own start up that's <b><a class="link"
+                                href="https://play.google.com/store/apps/developer?id=visionDev.com">visionDev</a></b>
+                        on which
+                        I have pulished app's such as moneyed on playstore . I'm loving
+                        programming since my 16 and started developing projects.
+                    </p>
+                    <br>
+                    <br>
+                </div>
+                <div class="meImg"></div>
+                <br><br><br><br><br>
+                <a href="https://github.com/OmkarSsawant"><img style="transform: translate(-147%,357%); opacity: 0.95;"
+                        src="assets/github-logo.png" alt="git" height="64vh" width="79vw" />
+                </a>
+            </div>
+            <div class="max-future">I
+
+
+            </div>
+
+
+    </section>
+
+    <section class="prof">
+
+        <h2>What I do </h2>
+        <div class="showcase">
+            <div class="pro" style="box-shadow: 2px 2px 2px 2px grey">
+                <a href="https://play.google.com/store/apps/details?id=com.visionDev.moneyed"><img id="mImg"
+                        src="assets/moneyed.png" alt="No Internet" /></a>
+                <div id="name-pro">Moneyed</div>
+            </div>
+            <div class="pro" style="box-shadow: 2px 2px 2px 2px grey">
+                <a href=""> <img id="tImg" src="assets/ttr.png" alt="No Internet" height="100vh" /> </a>
+                <div id="name-pro">TextToRec</div>
+            </div>
+            <div class="pro" style="box-shadow: 2px 2px 2px 2px grey">
+                <div class="restric-cls">
+                    <a href="https://pub.dev/packages/spotify_auth_player"> <img id="sImg" src="assets/plugin-min.png"
+                            alt="No Internet" /></a>
+                </div>
+                <div id="name-pro">spotify_auth_player</div>
+            </div>
+            <div class="pro" style="box-shadow: 5px 0px 5px rgb(88, 87, 87);">
+                <a href="https://pub.dev/packages/gpslocator"> <img id="gImg" src="assets/plugin-min.png"
+                        alt="No Internet" /></a>
+                <div id="name-pro">gpslocator</div>
+            </div>
+
+        </div>
+        <!-- <div class="nav-lib">
+    <a  target="blank" href="/public/projector.html">more..</a>
+</div> -->
+        <p>I have worked on my various self made projects and also developed complex flutter plugins such as <a
+                class="link" href="https://pub.dev/packages/gpslocator">gpslocator</a> and <a class="link"
+                href="https://pub.dev/packages/spotify_auth_player">spotify_auth_player</a> and developed
+            websites such as <a href="https://image-to-text-visiondev.web.app/" class="link">TextoRec</a> , <a href="#"
+                class="link">Swarajya</a> and having <a
+                href="https://play.google.com/store/apps/details?id=com.visionDev.moneyed" class="link">moneyed</a> app
+            in production.
+        </p>
+
+    </section>
+
+
+    <section class="contacts">
+        <h2 class="chat-head">Let's Chat </h2>
+        <p class="chat-desc">Lets's get in touch wheather you liked my work or would like to collobrate with an amazing
+            project. Happy to
+            hear your responce .</p>
+        <div class="form-email">
+            <div class="form-content">
+                <h5>Name : </h5>
+                <br />
+                <input type="name" class="deep" name="name" id="name" placeholder="Enter your name" />
+                <h5>Subject : </h5>
+                <br />
+                <input type="subject" class="deep" name="subject" id="subject" placeholder="Enter your subject" />
+                <h5>Message : <span style="color: red;">*</span></h5>
+                <br />
+                <textarea type="message" class="deep" name="message" id="message"
+                    placeholder="Enter your message"></textarea> <br />
+                <button class="send" onclick="javascript:submit_it();">
+                    Sent it </button>
+            </div>
+        </div>
+    </section>
+    <section class="end">
+        <div class="cp">© Copyrights reserved by visionDev </div>
+    </section>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
